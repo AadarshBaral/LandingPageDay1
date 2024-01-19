@@ -2,6 +2,7 @@ import React from "react";
 import { CiHome } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
+import { IoMdNotificationsOutline } from "react-icons/io";
 function Navbar() {
   return (
     <div className="max-container">
@@ -10,7 +11,7 @@ function Navbar() {
           <p className="logo">
             <div className="logo-icon-container">
               <FaHome />
-              <h3>MYlogo</h3>
+              <h3>MyContent</h3>
             </div>
           </p>
           <div className="searchbar">
@@ -27,22 +28,18 @@ function Navbar() {
           </div>
         </div>
         <div className="links-container">
-          <button className="creator">Become a creator</button>
-
+          <button className="creator button-primary">Become a creator</button>
+          
+          
+            <div className="notification-container">
+            <div className="red-dot"></div>
+                <IoMdNotificationsOutline className="notification" /></div>
           <div className="profile-container">
             <p className="name">Aadarsh</p>
             <div className="image-container"></div>
           </div>
         </div>
-        <div className="feed-container">
-          <div className="feed-links">
-            <ul>
-              <li className="feed-link">Posts</li>
-              <li className="feed-link">Overview</li>
-              <li className="feed-link">Goals</li>
-            </ul>
-          </div>
-        </div>
+ 
       </div>
     </div>
   );
